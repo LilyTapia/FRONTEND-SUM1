@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inicio - Store Evolution VideoGames</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
   <header>
-    <h1>Store Evolution VideoGames</h1>
-    <p>Bienvenidos a la mejor tienda de videojuegos.</p>
+    <!-- Banner con GIF -->
+    <div class="brandbar">
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container">
+        <nav aria-label="Navegación principal" class="main-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <nav aria-label="Navegación principal">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
 
-  <main>
-    <section>
+  <main class="container">
+    <section class="section">
       <h2>Inicio</h2>
-      <p>Explora nuestras últimas novedades, ofertas y títulos destacados para todas las consolas.</p>
-      <p>Haz clic en la sección <strong>Productos</strong> para ver nuestro catálogo completo o en <strong>Contacto</strong> para comunicarte con nosotros.</p>
+      <p>Bienvenidos a la mejor tienda de videojuegos. Explora nuestras últimas novedades, ofertas y títulos destacados
+        para todas las consolas.</p>
+      <p>Haz clic en la sección <strong>Productos</strong> para ver nuestro catálogo completo o en
+        <strong>Contacto</strong> para comunicarte con nosotros.
+      </p>
+    </section>
+
+    <section id="destacados" class="section">
+      <h2>Productos destacados</h2>
+      <div class="grid">
+        <!-- KINGDOM COME -->
+        <article class="card">
+          <a href="producto-kingdom.html" class="card-link">
+            <img src="img/kingdom_come_deliverance_2.jpg" alt="Kingdom Come: Deliverance 2">
+            <h3>KINGDOM COME: DELIVERANCE 2</h3>
+            <p>RPG de acción.</p>
+            <div class="precio">$29.990 CLP</div>
+          </a>
+        </article>
+
+        <!-- DONKEY KONG BONANZA -->
+        <article class="card">
+          <a href="producto-donkey.html" class="card-link">
+            <img src="img/Donkey_kong_bananza.png" alt="Donkey Kong Bonanza">
+            <h3>DONKEY KONG BONANZA</h3>
+            <p>Plataformas y aventuras en 3D con acción.</p>
+            <div class="precio">$34.990 CLP</div>
+          </a>
+        </article>
+
+        <!-- CLAIR OBSCUR -->
+        <article class="card">
+          <a href="producto-expedition33.html" class="card-link">
+            <img src="img/Clair_obscur.jpg" alt="Clair Obscur: Expedition 33">
+            <h3>CLAIR OBSCUR: EXPEDITION 33</h3>
+            <p>RPG tipo Rol.</p>
+            <div class="precio">$24.990 CLP</div>
+          </a>
+        </article>
+
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Store Evolution VideoGames. Todos los derechos reservados.</p>
+    <div class="container">
+      <p>© 2025 Store Evolution VideoGames. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>
+
 </html>
