@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Productos - Store Evolution VideoGames</title>
+  <title>Productos | Store Evolution VideoGames</title>
+  <meta name="description" content="Catálogo de videojuegos: RPG, acción, aventura, mundo abierto y más. Compra online en Store Evolution VideoGames.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png">
 </head>
 <body>
 
+  <!-- Enlace de salto para lectores de pantalla y teclado -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <header>
     <div class="header-banner"><div class="container"></div></div>
+
     <div class="site-navbar">
       <div class="container">
         <nav aria-label="Navegación principal" class="site-nav">
@@ -23,92 +29,114 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h2>Catálogo</h2>
+  <main id="contenido" class="container">
+    <!-- H1 único por página para SEO y accesibilidad -->
+    <h1>Productos</h1>
+
+    <section class="section" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo">Catálogo</h2>
+
       <div class="product-grid">
 
         <article class="card">
           <a href="producto-kingdom.html#from-productos" class="card-link">
-            <img src="img/kingdom_come_deliverance_2.jpg" alt="Kingdom Come: Deliverance 2">
+            <img src="img/kingdom_come_deliverance_2.jpg"
+                 alt="Portada del juego Kingdom Come: Deliverance 2"
+                 loading="lazy" width="640" height="360">
             <h3>KINGDOM COME: DELIVERANCE 2</h3>
             <p>RPG de acción ambientado en la Bohemia del siglo XV.</p>
-            <div class="precio">$29.990 CLP</div>
+            <data class="precio" value="29990" aria-label="Precio 29 mil 990 pesos chilenos">$29.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-donkey.html#from-productos" class="card-link">
-            <img src="img/Donkey_kong_bananza.png" alt="Donkey Kong Bonanza">
+            <img src="img/Donkey_kong_bananza.png"
+                 alt="Portada del juego Donkey Kong Bonanza"
+                 loading="lazy" width="640" height="360">
             <h3>DONKEY KONG BONANZA</h3>
             <p>Plataformas y aventuras en 3D con acción.</p>
-            <div class="precio">$34.990 CLP</div>
+            <data class="precio" value="34990" aria-label="Precio 34 mil 990 pesos chilenos">$34.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-expedition33.html#from-productos" class="card-link">
-            <img src="img/Clair_obscur.jpg" alt="Clair Obscur: Expedition 33">
+            <img src="img/Clair_obscur.jpg"
+                 alt="Portada del juego Clair Obscur: Expedition 33"
+                 loading="lazy" width="640" height="360">
             <h3>CLAIR OBSCUR: EXPEDITION 33</h3>
             <p>RPG inspirado en la Belle Époque.</p>
-            <div class="precio">$24.990 CLP</div>
+            <data class="precio" value="24990" aria-label="Precio 24 mil 990 pesos chilenos">$24.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-ff7r.html#from-productos" class="card-link">
-            <img src="img/Final_fantasy_VII_Rebirth.jpg" alt="Final Fantasy VII Rebirth">
+            <img src="img/Final_fantasy_VII_Rebirth.jpg"
+                 alt="Portada del juego Final Fantasy VII Rebirth"
+                 loading="lazy" width="640" height="360">
             <h3>FINAL FANTASY VII REBIRTH</h3>
             <p>Acción RPG para PlayStation 5 y PC.</p>
-            <div class="precio">$59.990 CLP</div>
+            <data class="precio" value="59990" aria-label="Precio 59 mil 990 pesos chilenos">$59.990 CLP</data>
           </a>
         </article>
 
-        
         <article class="card">
           <a href="producto-eldenring.html#from-productos" class="card-link">
-            <img src="img/Elden_Ring.webp" alt="Elden Ring">
+            <img src="img/Elden_Ring.webp"
+                 alt="Portada del juego Elden Ring"
+                 loading="lazy" width="640" height="360">
             <h3>ELDEN RING</h3>
             <p>Acción RPG de mundo abierto.</p>
-            <div class="precio">$49.990 CLP</div>
+            <data class="precio" value="49990" aria-label="Precio 49 mil 990 pesos chilenos">$49.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-spiderman2.html#from-productos" class="card-link">
-            <img src="img/Marvels_Spider-Man_2.avif" alt="Marvel’s Spider-Man 2">
+            <img src="img/Marvels_Spider-Man_2.avif"
+                 alt="Portada del juego Marvel’s Spider-Man 2"
+                 loading="lazy" width="640" height="360">
             <h3>MARVEL’S SPIDER-MAN 2</h3>
             <p>Acción y aventura en Nueva York.</p>
-            <div class="precio">$59.990 CLP</div>
+            <data class="precio" value="59990" aria-label="Precio 59 mil 990 pesos chilenos">$59.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-mariokart8.html#from-productos" class="card-link">
-            <img src="img/Mario_Kart_8_Deluxe.avif" alt="Mario Kart 8 Deluxe">
+            <img src="img/Mario_Kart_8_Deluxe.avif"
+                 alt="Portada del juego Mario Kart 8 Deluxe"
+                 loading="lazy" width="640" height="360">
             <h3>MARIO KART 8 DELUXE</h3>
             <p>Carreras multijugador llenas de ítems.</p>
-            <div class="precio">$44.990 CLP</div>
+            <data class="precio" value="44990" aria-label="Precio 44 mil 990 pesos chilenos">$44.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-witcher3.html#from-productos" class="card-link">
-            <img src="img/The_Witcher_3_Wild_Hunt.avif" alt="The Witcher 3: Wild Hunt">
+            <img src="img/The_Witcher_3_Wild_Hunt.avif"
+                 alt="Portada del juego The Witcher 3: Wild Hunt"
+                 loading="lazy" width="640" height="360">
             <h3>THE WITCHER 3: WILD HUNT</h3>
             <p>RPG de mundo abierto con gran narrativa.</p>
-            <div class="precio">$39.990 CLP</div>
+            <data class="precio" value="39990" aria-label="Precio 39 mil 990 pesos chilenos">$39.990 CLP</data>
           </a>
         </article>
 
         <article class="card">
           <a href="producto-minecraft.html#from-productos" class="card-link">
-            <img src="img/Minecraft.avif" alt="Minecraft">
+            <img src="img/Minecraft.avif"
+                 alt="Portada del juego Minecraft"
+                 loading="lazy" width="640" height="360">
             <h3>MINECRAFT</h3>
             <p>Construcción y supervivencia sandbox.</p>
-            <div class="precio">$26.990 CLP</div>
+            <data class="precio" value="26990" aria-label="Precio 26 mil 990 pesos chilenos">$26.990 CLP</data>
           </a>
         </article>
+
       </div>
     </section>
   </main>
