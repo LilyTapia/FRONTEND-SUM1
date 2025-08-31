@@ -21,7 +21,7 @@ Actualización reciente: se refactorizó el CSS/HTML con clases descriptivas, ut
 ## 🏗️ Estructura del Proyecto
 
 ```
-Exp1_S2_Liliana_Tapia/
+Exp1_S3_Liliana_Tapia/
 ├── index.html                    # Página principal
 ├── productos.html                # Catálogo de productos
 ├── contacto.html                 # Formulario de contacto
