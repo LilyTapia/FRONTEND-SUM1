@@ -10,12 +10,12 @@
 
 <body>
   <header>
-    <div class="brandbar">
+    <div class="header-banner">
       <div class="container"></div>
     </div>
-    <div class="navbar">
+    <div class="site-navbar">
       <div class="container">
-        <nav aria-label="Navegación principal" class="main-nav">
+        <nav aria-label="Navegación principal" class="site-nav">
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html" aria-current="page">Productos</a></li>
@@ -28,11 +28,11 @@
 
   <main class="container">
     <section class="section">
-      <div class="detail-grid">
+      <div class="product-detail">
         <img src="img/Elden_Ring.webp" alt="Elden Ring">
         <div>
-          <h2 style="margin-top:0;">Elden Ring</h2>
-          <p class="precio" style="font-size:1.2rem;">$49.990 CLP</p>
+          <h2>Elden Ring</h2>
+          <p class="precio">$49.990 CLP</p>
           <p>Acción RPG de mundo abierto en las Tierras Intermedias.</p>
 
           <ul>
@@ -55,7 +55,10 @@
           </ul>
           <p><strong>Puntaje:</strong> ★★★★½ (4,8/5)</p>
 
-          <p style="margin-top:1rem;"><a href="productos.html" class="btn-details">← Volver a productos</a></p>
+          <div class="button-group mt-1">
+            <a class="btn" href="index.html#destacados">← Volver a destacados</a>
+            <a class="btn success" href="productos.html">← Volver a productos</a>
+          </div>
         </div>
       </div>
     </section>

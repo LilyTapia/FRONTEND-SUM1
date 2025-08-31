@@ -10,12 +10,12 @@
 
 <body>
   <header>
-    <div class="brandbar">
+    <div class="header-banner">
       <div class="container"></div>
     </div>
-    <div class="navbar">
+    <div class="site-navbar">
       <div class="container">
-        <nav aria-label="Navegación principal" class="main-nav">
+        <nav aria-label="Navegación principal" class="site-nav">
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html" aria-current="page">Productos</a></li>
@@ -28,11 +28,11 @@
 
   <main class="container">
     <section class="section">
-      <div class="detail-grid">
+      <div class="product-detail">
         <img src="img/Minecraft.avif" alt="Minecraft">
         <div>
-          <h2 style="margin-top:0;">Minecraft</h2>
-          <p class="precio" style="font-size:1.2rem;">$26.990 CLP</p>
+          <h2>Minecraft</h2>
+          <p class="precio">$26.990 CLP</p>
           <p>Construcción, supervivencia y creatividad sin límites.</p>
 
           <ul>
@@ -52,7 +52,10 @@
           </ul>
           <p><strong>Puntaje:</strong> ★★★★☆ (4,4/5)</p>
 
-          <p style="margin-top:1rem;"><a href="productos.html" class="btn-details">← Volver a productos</a></p>
+          <div class="button-group mt-1">
+            <a class="btn" href="index.html#destacados">← Volver a destacados</a>
+            <a class="btn success" href="productos.html">← Volver a productos</a>
+          </div>
         </div>
       </div>
     </section>

@@ -10,13 +10,13 @@
 
 <body>
   <header>
-    <div class="brandbar">
+    <div class="header-banner">
       <div class="container">
       </div>
     </div>
-    <div class="navbar">
+    <div class="site-navbar">
       <div class="container">
-        <nav aria-label="Navegación principal" class="main-nav">
+        <nav aria-label="Navegación principal" class="site-nav">
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html" aria-current="page">Productos</a></li>
@@ -29,11 +29,11 @@
 
   <main class="container">
     <section class="section">
-      <div class="detail-grid">
+      <div class="product-detail">
         <img src="img/Final_fantasy_VII_Rebirth.jpg" alt="Final Fantasy VII Rebirth">
         <div>
-          <h2 style="margin-top:0;">Final Fantasy VII Rebirth</h2>
-          <p class="precio" style="font-size:1.2rem;">$59.990 CLP</p>
+          <h2>Final Fantasy VII Rebirth</h2>
+          <p class="precio">$59.990 CLP</p>
           <p>Acción RPG que continúa la aventura fuera de Midgar.</p>
 
           <!-- Especificaciones -->
@@ -60,7 +60,10 @@
           <p><strong>Puntaje:</strong> ★★★★ (4,7/5) · <em>Ideal para</em> quienes disfrutan de RPG de acción con gran
             narrativa y espectáculo.</p>
 
-          <p style="margin-top:1rem;"><a href="productos.html" class="btn-details">← Volver a productos</a></p>
+          <div class="button-group mt-1">
+            <a class="btn" href="index.html#destacados">← Volver a destacados</a>
+            <a class="btn success" href="productos.html">← Volver a productos</a>
+          </div>
         </div>
       </div>
     </section>

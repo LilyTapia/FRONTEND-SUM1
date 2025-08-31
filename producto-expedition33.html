@@ -10,13 +10,13 @@
 
 <body>
   <header>
-    <div class="brandbar">
+    <div class="header-banner">
       <div class="container">
       </div>
     </div>
-    <div class="navbar">
+    <div class="site-navbar">
       <div class="container">
-        <nav aria-label="Navegación principal" class="main-nav">
+        <nav aria-label="Navegación principal" class="site-nav">
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html" aria-current="page">Productos</a></li>
@@ -29,11 +29,11 @@
 
   <main class="container">
     <section class="section">
-      <div class="detail-grid">
+      <div class="product-detail">
         <img src="img/Clair_obscur.jpg" alt="Clair Obscur: Expedition 33">
         <div>
-          <h2 style="margin-top:0;">Clair Obscur: Expedition 33</h2>
-          <p class="precio" style="font-size:1.2rem;">$24.990 CLP</p>
+          <h2>Clair Obscur: Expedition 33</h2>
+          <p class="precio">$24.990 CLP</p>
           <p>RPG inspirado en la Belle Époque.</p>
 
           <!-- Especificaciones -->
@@ -60,7 +60,10 @@
           <p><strong>Puntaje:</strong> ★★★★☆ (4,3/5) · <em>Ideal para</em> amantes de los RPG tácticos con estilo
             artístico fuerte.</p>
 
-          <p style="margin-top:1rem;"><a href="productos.html" class="btn-details">← Volver a productos</a></p>
+          <div class="button-group mt-1">
+            <a class="btn" href="index.html#destacados">← Volver a destacados</a>
+            <a class="btn success" href="productos.html">← Volver a productos</a>
+          </div>
         </div>
       </div>
     </section>
