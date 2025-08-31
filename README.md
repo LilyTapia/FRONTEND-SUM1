@@ -155,7 +155,7 @@ Para personalizar el proyecto:
 ## 👨‍💻 Autor
 
 **Liliana Tapia**  
-Proyecto desarrollado para DUOC UC - Frontend I, Semana 2
+Proyecto desarrollado para DUOC UC - Frontend I, Semana 3.
 
 ## 📄 Licencia
 
