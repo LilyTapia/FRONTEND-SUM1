@@ -183,8 +183,10 @@ section {
 }
 
 .card img {
+  display: block;
   width: 100%;
-  height: 210px;
+  aspect-ratio: 16/9;     /* mantiene proporción sin “saltos” */
+  height: auto;           /* deja a ratio controlar la altura */
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid #1f2937;
@@ -248,11 +250,13 @@ section {
 
 .product-detail img {
   width: 100%;
-  height: 240px;
+  aspect-ratio: 4/3;      /* o 16/9 si tus assets van así */
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid #1f2937;
 }
+
 
 /* ===========================
       Contacto (layout base)
@@ -389,13 +393,31 @@ footer {
   border-top: 1px solid #1f2937;
 }
 
+/* Enlace de salto para teclado/lectores */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: var(--brand);
+  color: #0b1220;
+  padding: .5rem .75rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.skip-link:focus {
+  left: .5rem;
+  top: .5rem;
+  outline: 2px solid #000;
+}
+
 /* ===========================
       Accesibilidad (foco)
       =========================== */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--brand);
-  outline-offset: 3px;
+  outline-offset: 4px;
 }
 
 /* Foco en enlaces del menú: usa anillo sin desbordar */
@@ -465,13 +487,28 @@ button:focus-visible {
 }
 
 /* ===========================
-      Accesibilidad: reducir motion
-      =========================== */
-@media (prefers-reduced-motion: reduce) {
-  .header-banner {
-    background-image: url("../img/banner.gif") !important;
+   Accesibilidad: reducir motion
+   =========================== */
+   @media (prefers-reduced-motion: reduce) {
+    /* corta animaciones, transiciones y smooth scroll globalmente */
+    * {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  
+    /* evita “saltos” por hover elevado */
+    .card:hover {
+      transform: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,.28);
+    }
+  
+    /* banner sin “zoom”/movimiento extra en móvil */
+    .header-banner {
+      background-size: contain;
+    }
   }
-}
+  
 
 /* ===========================
       Overrides específicos (página de contacto)
