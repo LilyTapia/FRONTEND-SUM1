@@ -6,6 +6,8 @@ Una tienda online moderna de videojuegos desarrollada con HTML5 y CSS3 puro, sin
 
 Store Evolution VideoGames es una aplicación web estática que simula una tienda de videojuegos con un diseño moderno, responsivo y accesible. El proyecto está desarrollado exclusivamente con HTML semántico y CSS moderno, demostrando las capacidades actuales de estas tecnologías.
 
+Actualización reciente: se refactorizó el CSS/HTML con clases descriptivas, utilidades de espaciado/estilo y se optimizó el banner del header para móviles sin degradados superpuestos.
+
 ## ✨ Características
 
 - **Diseño Responsivo**: Adaptable a dispositivos móviles, tablets y desktop
@@ -31,6 +33,17 @@ Exp1_S2_Liliana_Tapia/
 │   └── *.jpg|*.png|*.webp|*.avif # Imágenes de productos
 └── README.md                    # Este archivo
 ```
+
+## 🧭 Convenciones de Clases (BEM-like, descriptivas)
+
+- Header: `header-banner`, `site-navbar`, `site-nav`
+- Listados: `product-grid`
+- Fichas de producto: `product-detail`
+- Contacto: `contact-info`, `form__actions`
+- Botones: `btn`, `btn success`, `button-group`
+- Utilidades: `mt-1`, `mt-2`, `mb-1`, `mb-2`, `py-2`, `text-center`, `muted`, `small`, `lead`, `icon-xl`, `callout`, `heading-success`, `heading-accent`
+
+Clases antiguas como `brandbar`, `navbar`, `main-nav`, `grid`, `detail-grid`, `info-contacto`, `form-actions` y `btn-row` fueron eliminadas en CSS y sustituidas por las anteriores en HTML.
 
 ## 📱 Páginas Incluidas
 
@@ -59,6 +72,7 @@ Exp1_S2_Liliana_Tapia/
   - Media Queries para responsividad
   - Pseudo-selectores avanzados
   - Animaciones y transiciones
+  - Utilidades reutilizables (espaciado, tipografía, callouts)
 
 ## 🚀 Instalación y Uso
 
@@ -76,6 +90,10 @@ El proyecto incluye breakpoints para diferentes dispositivos:
 - **Tablet**: 600px - 900px (2 columnas en grid)
 - **Móvil**: < 600px (1 columna en grid)
 
+Notas:
+- El banner (`header-banner`) usa `background-size: cover`; en < 600px pasa a `contain` para evitar cortes del GIF.
+- El foco del menú se renderiza con `box-shadow` dentro del navbar para no desbordar el banner.
+
 ## 🎯 Características Técnicas
 
 ### CSS Moderno
@@ -84,6 +102,7 @@ El proyecto incluye breakpoints para diferentes dispositivos:
 - Flexbox para alineación de componentes
 - `clamp()` para tipografía fluida
 - `backdrop-filter` para efectos de cristal
+- Estados hover/focus accesibles sin “saltos” visuales
 
 ### Accesibilidad
 - Navegación por teclado completa
@@ -123,7 +142,7 @@ Para personalizar el proyecto:
 
 1. **Colores**: Modificar las variables CSS en `:root`
 2. **Tipografía**: Cambiar la familia de fuentes en `body`
-3. **Layout**: Ajustar las grillas en `.grid` y `.detail-grid`
+3. **Layout**: Ajustar las grillas en `.product-grid` y `.product-detail`
 4. **Contenido**: Editar los archivos HTML individuales
 
 ## 📱 Compatibilidad
